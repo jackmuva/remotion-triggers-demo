@@ -1,6 +1,7 @@
 import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { RadialBackground } from "../intro-scene/layers/radial-background";
 import { ClosingStatement } from "./layers/closing-statement";
+import { ActionSpray } from "./layers/action-spray";
 
 export const WrapScene = () => {
 	const frame = useCurrentFrame();
@@ -22,6 +23,7 @@ export const WrapScene = () => {
 				opacity: fadeOpacity,
 			}}>
 				<ClosingStatement frame={frame} startFrame={0} endFrame={280} />
+				<ActionSpray frame={frame} startFrame={120} endFrame={280} />
 			</div>
 		</AbsoluteFill>
 	);

@@ -1,5 +1,5 @@
 import {
-	AbsoluteFill, interpolate, Img, staticFile
+	AbsoluteFill, interpolate
 } from "remotion";
 
 export const ClosingStatement = ({
