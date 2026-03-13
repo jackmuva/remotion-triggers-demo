@@ -1,11 +1,8 @@
 import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { RadialBackground } from "../intro-scene/layers/radial-background";
-import { PrevContent } from "./layers/prev-content";
-import { ActionKitSplit } from "./layers/actionkit-split";
-import { ToolsIntro } from "./layers/tools-intro";
-import { TriggersIntro } from "./layers/triggers-intro";
+import { ClosingStatement } from "./layers/closing-statement";
 
-export const ActionKitScene = () => {
+export const WrapScene = () => {
 	const frame = useCurrentFrame();
 	const { durationInFrames } = useVideoConfig();
 
@@ -24,11 +21,9 @@ export const ActionKitScene = () => {
 			<div style={{
 				opacity: fadeOpacity,
 			}}>
-				<PrevContent frame={frame} startFrame={0} endFrame={380} />
-				<ActionKitSplit frame={frame} startFrame={50} endFrame={380} />
-				<ToolsIntro frame={frame} startFrame={100} endFrame={380} />
-				<TriggersIntro frame={frame} startFrame={225} endFrame={380} />
+				<ClosingStatement frame={frame} startFrame={0} endFrame={280} />
 			</div>
 		</AbsoluteFill>
 	);
+
 }

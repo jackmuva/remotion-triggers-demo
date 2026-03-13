@@ -22,7 +22,7 @@ export const ActionKitSplit = ({
 	const toolTranslateX = interpolate(
 		frame,
 		[startFrame, startFrame + 20],
-		[0, -500],
+		[0, -750],
 		{
 			extrapolateLeft: "clamp",
 			extrapolateRight: "clamp",
@@ -32,7 +32,7 @@ export const ActionKitSplit = ({
 	const triggerTranslateX = interpolate(
 		frame,
 		[startFrame, startFrame + 20],
-		[0, 300],
+		[0, 240],
 		{
 			extrapolateLeft: "clamp",
 			extrapolateRight: "clamp",
