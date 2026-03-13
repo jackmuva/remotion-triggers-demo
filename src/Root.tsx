@@ -6,7 +6,7 @@ export const RemotionRoot: React.FC = () => {
 	return (
 		<Composition
 			id="actionkit-triggers"
-			durationInFrames={840}
+			durationInFrames={980}
 			fps={30}
 			width={1920}
 			height={1080}

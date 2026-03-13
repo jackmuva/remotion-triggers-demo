@@ -56,14 +56,14 @@ export const ActionKitSplit = ({
 				opacity: opacity,
 				transform: `translateY(${translateY}px)
 				translateX(${toolTranslateX}px)`
-			}} className="absolute top-[150px] left-[800px] text-[60px] font-semibold text-indigo-800">
+			}} className="absolute top-[150px] left-[800px] text-[60px] font-semibold text-indigo-700">
 				ActionKit Tools
 			</div>
 			<div style={{
 				opacity: opacity,
 				transform: `translateY(${translateY}px)
 				translateX(${triggerTranslateX}px)`
-			}} className="absolute top-[150px] left-[800px] text-[60px] font-semibold text-indigo-800">
+			}} className="absolute top-[150px] left-[800px] text-[60px] font-semibold text-indigo-700">
 				ActionKit Triggers
 			</div>
 

@@ -13,17 +13,17 @@ export const ClosingStatement = ({
 }) => {
 	const opacity = interpolate(
 		frame,
-		[startFrame, startFrame + 40],
-		[0, 1],
+		[startFrame, startFrame + 40, endFrame - 20, endFrame],
+		[0, 1, 1, 0],
 	);
 	const fadeOut = interpolate(
 		frame,
-		[startFrame + 60, startFrame + 80],
+		[startFrame + 80, startFrame + 100],
 		[1, 0],
 	);
 	const fadeIn = interpolate(
 		frame,
-		[startFrame + 80, startFrame + 120],
+		[startFrame + 100, startFrame + 130],
 		[0, 1],
 	);
 
@@ -33,9 +33,12 @@ export const ClosingStatement = ({
 				opacity: opacity,
 			}}>
 				<div className="text-[60px] font-semibold text-center w-[1500px]" >
-					Let Paragon take care of
+					<span className="font-bold text-indigo-700" >
+						With ActionKit
+					</span>
+					, let Paragon take care of
 				</div>
-				{frame < startFrame + 80 ? (
+				{frame < startFrame + 100 ? (
 					<div style={{
 						opacity: frame < (startFrame - 60) ? opacity : fadeOut,
 					}} className="text-[60px] font-semibold text-center w-[1500px]" >
@@ -47,9 +50,6 @@ export const ClosingStatement = ({
 						all the integration actions you need
 					</div>
 				)}
-				<div className="text-[60px] font-semibold text-center w-[1500px] font-bold text-indigo-700" >
-					with ActionKit
-				</div>
 			</div>
 		</AbsoluteFill>
 	);
